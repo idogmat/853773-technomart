@@ -2,54 +2,60 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Каталог товаров - Техномарт</title>
+    <title>Главная страница - Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="header-main">
       <div class="header-panel">
         <div class="container">
-          <a href="index.html" class="header-logo">Техномарт</a>
+          <!-- центровщик -->
+          <a class="header-logo">Техномарт</a>
           <form class="header-search" action="search" method="post">
-            <button type="submit">Найти</button>
-            <input type="text" name="serch">
+            <button type="submit"><span class="visually-hidden">Найти</span></button>
+            <input type="text" name="serch" placeholder="Поиск">
           </form>
-          <a href="#" class="bookmark">Закладки: 0</a>
-          <a href="#" class="cart">Корзина: 0</a>
-          <a href="#" class="order">Оформить заказ</a>
+          <a href="#" class="bookmark bar-left">Закладки: 0</a>
+          <a href="#" class="cart-red bar-left">Корзина: 10</a>
+          <a href="#" class="order bar-left">Оформить заказ</a>
         </div>
       </div>
-      <div>
-        <div class="container">
-          <div>
-            <p class="top-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-            <div class="our-contacts">
-              <p class="our-telephone">+7 (812) 555-05-55</p>
-              <p class="our-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            </div>
-            <div class="user-contact">
-              <a href="#" class="user-login">Войти</a>
-              <a href="#" class="user-registration">Регистрация</a>
+      <div class="container">
+        <div class="header-panel-info">
+          <p class="top-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <div class="our-contacts">
+            <p class="our-telephone">+7 (812) 555-05-55</p>
+            <p class="our-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+          <div class="user-contacts ravshan">
+            <a href="#" class="user-btn">Равшан Джамшутович</a>
+            <div class="user-option">
+              <a href="#" class="ur-orders">Мои заказы</a>
+              <a href="#" clss="ur-orders">Личный кабинет</a>
             </div>
           </div>
-          <nav class="main-panel">
-            <a href="#">Главная</a>
-            <a href="#">Компания</a>
-            <a href="#">Каталог</a>
-            <a href="#">Новости</a>
-            <a href="#">Спецпредложения</a>
-            <a href="#">Доставка</a>
-            <a href="#">Контакты</a>
-          </nav>
         </div>
+        <nav class="main-panel">
+          <ul class="main-block">
+            <li class="main-item"><a href="#" class="main-link">Главная</a></li>
+            <li class="main-item"><a href="#" class="main-link">Компания</a></li>
+            <li class="main-item"><a href="#" class="main-link">Каталог</a></li>
+            <li class="main-item"><a href="#" class="main-link">Новости</a></li>
+            <li class="main-item"><a href="#" class="main-link">Спецпредложения</a></li>
+            <li class="main-item"><a href="#" class="main-link">Доставка</a></li>
+            <li class="main-item"><a href="#" class="main-link">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="container-catalog">
       <nav class="breadcrumbs">
-        <a href="#">Каталог</a>
-        <a href="#">Инструмент</a>
-        <a href="#">Перфораторы</a>
+        <a href="#" class="breadcrumbs-item"><span class="visually-hidden">Главная</span></a>
+        <a href="#" class="breadcrumbs-item">Каталог</a>
+        <a href="#" class="breadcrumbs-item">Инструмент</a>
+        <a href="#" class="breadcrumbs-item">Перфораторы</a>
       </nav>
       <h1 class="page-title">Перфораторы</h1>
       <section class="filters">
@@ -224,38 +230,38 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <div class="footer-panel-menu">
-        <a href="index.html" class="footer-panel-logo">Техномарт</a>
-        <ul class="footer-panel-contacts">
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </div>
-      <div class="footer-middle-panel">
-        <div class="footer-panel-address">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>+7 (495) 555-05-55</p>
+    <footer class="footer-menu">
+      <div class="container">
+        <div class="footer-top-panel ">
+          <a href="index.html" class="footer-logo"><img src="img/logo-footer.png" width="220" height="68" alt="Техномарт"></a>
+          <ul class="footer-panel-contacts catalog-li">
+            <li class="footer-li"><a href="#" class="fo-li">Компания</a></li>
+            <li class="footer-li"><a href="#" class="fo-li">Новости</a></li>
+            <li class="footer-li"><a href="#" class="fo-li">Каталог</a></li>
+            <li class="footer-li"><a href="#" class="fo-li">Доставка</a></li>
+            <li class="footer-li"><a href="#" class="fo-li">Контакты</a></li>
+          </ul>
         </div>
-        <ul class="footer-panel-offer">
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Иструменты</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-        </ul>
+        <div class="footer-middle-panel">
+          <p class="footer-panel-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (495) 555-05-55</p>
+          <ul class="footer-panel-offer catalog-li">
+            <li class="footer-li"><a href="#" class="fo-a-second">Материалы</a></li>
+            <li class="footer-li"><a href="#" class="fo-a-second">Техника</a></li>
+            <li class="footer-li"><a href="#" class="fo-a-second">Иструменты</a></li>
+            <li class="footer-li"><a href="#" class="fo-a-second">Спецпредложения</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-bottom-panel">
-        <div class="container">
+        <div class="bottom-container ">
           <div class="footer-bottom-copyright">
-            <p>© 2010-2013 Компания «Техномарт» Все права защищены</p>
+            <p>© 2010-2013 Компания «Техномарт»<br>
+            Все права защищены</p>
           </div>
           <div class="footer-social">
-            <a href="#" class="footer-social-vk"><span class="visually-hidden">vk</span></a>
-            <a href="#" class="footer-social-fb"><span class="visually-hidden">fb</span></a>
-            <a href="#" class="footer-social-inst"><span class="visually-hidden">inst</span></a>
+            <a href="http://vk.com/htmlacademy" class="social-link footer-social-vk"><span class="visually-hidden">vk</span></a>
+            <a href="http://www.facebook.com/htmlacademy" class="social-link footer-social-fb"><span class="visually-hidden">fb</span></a>
+            <a href="http://twitter.com/htmlacademy_ru" class="social-link footer-social-inst"><span class="visually-hidden">inst</span></a>
           </div>
           <div class="feedback-html">
             <p>Обратная связь:</p>
@@ -267,14 +273,15 @@
           </div>
         </div>
       </div>
-    </footer>
-    <section class="modal bascet-added">
-      <p>Товар добавлен в корзину</p>
-      <button class="btn">
-      <a href="#" >Оформить заказ</a>
-      </button>
-      <button class="btn btn-white" type="button">Продолжить покупки</button>
-      <button class="close-btn" type="button"><span class="visually-hidden">close</span>
-      </button>
-    </section>
-  </body>
+    </div>
+  </footer>
+  <section class="modal bascet-added">
+    <p>Товар добавлен в корзину</p>
+    <button class="btn">
+    <a href="#" >Оформить заказ</a>
+    </button>
+    <button class="btn btn-white" type="button">Продолжить покупки</button>
+    <button class="close-btn" type="button"><span class="visually-hidden">close</span>
+    </button>
+  </section>
+</body>
