@@ -220,15 +220,22 @@ opacity: 1 ;
   padding:45px 50px ;
 }
 .our-telephone{
-  padding: 10px 25px;
+  position: relative;
+  padding: 8px 44px;
   margin: 0;
-  
   font-size: 21px;
   line-height: 21px;
   text-transform: none;
   text-align: center;
   color: #ee3643;
-  border: 1px solid #ffffff;
+  border: 3px solid #ffffff;
+}
+.our-telephone:before{
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  background-image: url(../img/icon-phone.svg);
+  background-size: 19px 19px;
 }
 .our-address{
   padding: 0;
