@@ -1663,3 +1663,44 @@ background-color: #ba2732;
 .service-slider-inner{
   padding-left: 320px;
 }
+.service-slider-btn-1:checked ~ .service-slider-controls .control-1,
+.service-slider-btn-2:checked ~ .service-slider-controls .control-2,
+.service-slider-btn-3:checked ~ .service-slider-controls .control-3 {
+  color: #32425c;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.service-slider-btn-1:checked ~ .service-slider-inner {
+  background-image: url(../img/delivery.png);
+  background-repeat: no-repeat;
+  background-position: 450px 0px;
+}
+
+.service-slider-btn-2:checked ~ .service-slider-inner {
+  background-image: url(../img/guarantee.png);
+  background-repeat: no-repeat;
+  background-position: 450px 0px;
+}
+
+.service-slider-btn-3:checked ~ .service-slider-inner {
+  background-image: url(../img/credit.png);
+  background-repeat: no-repeat;
+  background-position: 450px 0px;
+}
+/*.service-slider-btn-1:checked ~ .service-slider-inner .service-slides-2,
+.service-slider-btn-1:checked ~ .service-slider-inner .service-slides-3 {
+    
+    visibility: hidden;
+}
+
+.service-slider-btn-2:checked ~ .service-slider-inner .service-slides-3,
+.service-slider-btn-2:checked ~ .service-slider-inner .service-slides-1 {
+    
+    visibility: hidden;
+}
+
+.service-slider-btn-3:checked ~ .service-slider-inner .service-slides-1,
+.service-slider-btn-3:checked ~ .service-slider-inner .service-slides-2 {
+    
+    visibility: hidden;
+}*/
