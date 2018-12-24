@@ -1004,7 +1004,7 @@ button .offer{
 }
 .button-price-now{
   position: relative;
-  padding: 11px 30px;
+  padding: 10px 30px;
   white-space: nowrap;
   font-weight: 700;
   text-align: center;
@@ -1019,9 +1019,11 @@ button .offer{
   top: 0;
   right: -20px;
   width: 0;
-  height: 1px;
+  height: 0px;
   border: 20px solid #ffffff;
   border-left-color: #ee3643;
+  box-sizing: border-box;
+  
 }
 .filter-title{
   font-size: 17px;
@@ -1594,13 +1596,15 @@ background-color: #ba2732;
 /*index service*/
 .service{
   background-color: #f2f6f8;
+  margin-bottom: 0;
 }
 .container-service{
-  padding: 0 10px;
+  padding: 1px 10px;
   width: 940px;
   outline: 1px dashed;
   margin: 0 auto;
   padding-top: 68px;
+  min-height: 522px;
 }
 .service-title{
   margin-bottom: 22px;
@@ -1661,7 +1665,7 @@ background-color: #ba2732;
   display: none;
 }
 .service-slider-inner{
-  padding-left: 320px;
+  padding-left: 280px;
 }
 .service-slider-btn-1:checked ~ .service-slider-controls .control-1,
 .service-slider-btn-2:checked ~ .service-slider-controls .control-2,
@@ -1687,20 +1691,53 @@ background-color: #ba2732;
   background-repeat: no-repeat;
   background-position: 450px 0px;
 }
-/*.service-slider-btn-1:checked ~ .service-slider-inner .service-slides-2,
+.service-slider-btn-1:checked ~ .service-slider-inner .service-slides-2,
 .service-slider-btn-1:checked ~ .service-slider-inner .service-slides-3 {
-    
-    visibility: hidden;
+  display: none;
 }
 
 .service-slider-btn-2:checked ~ .service-slider-inner .service-slides-3,
 .service-slider-btn-2:checked ~ .service-slider-inner .service-slides-1 {
-    
-    visibility: hidden;
+    display: none;
 }
 
 .service-slider-btn-3:checked ~ .service-slider-inner .service-slides-1,
 .service-slider-btn-3:checked ~ .service-slider-inner .service-slides-2 {
+   display: none;
     
-    visibility: hidden;
+}
+.service-slide-btn{
+  padding: 14px 45px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+/*.service-slider-btn-1:checked ~ .service-slider-inner .service-slides {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+*/
+/*.service-slider-btn-2:checked ~ .service-slider-inner .service-slides-2 {
+    -webkit-transform: translateY(-450px);
+    -ms-transform: translateY(-450px);
+    transform: translateY(-450px);
+    
+}*/
+
+/*.service-slider-btn-3:checked ~ .service-slider-inner .service-slides-3 {
+    -webkit-transform: translateX(-1240px);
+    -ms-transform: translateX(-1240px);
+    transform: translateX(-1240px);
+    
+}*/
+/*.service-slider-btn-2:checked ~ .service-slider-inner .service-slides-2 {
+  
+}
+.service-slides-1,
+.service-slides-2,
+.service-slides-3{
+  display:none;
+}
+.service-slides-2{
+  display: block;
 }*/
