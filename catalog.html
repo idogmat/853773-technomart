@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Главная страница - Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -12,8 +11,8 @@
       <div class="header-panel">
         <div class="container">
           <a class="header-logo" href="index.html">Техномарт</a>
-          <form class="header-search" action="search" method="post">
-            <input class="search-ph" type="serch" name="serch" placeholder="Поиск">
+          <form class="header-search" action="#" method="post">
+            <input class="search-ph" type="text" name="serch" placeholder="Поиск">
             <button type="submit">
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
           </svg>
@@ -50,8 +49,7 @@
       </a>
       <div class="user-option">
         <a href="#" class="ur-orders ur-orders-1">Мои заказы</a>
-        <p><span></span></p>
-        <a href="#" clss="ur-orders">Личный кабинет</a>
+        <a href="#" class="ur-orders">Личный кабинет</a>
       </div>
     </div>
   </div>
@@ -102,9 +100,7 @@
 <div class="filter-shop-flex">
   <section class="catalog-filter">
     <form action="/echo" method="get">
-      <header class="filter-header">
-        <h2 class="filter-header-title">Фильтр:</h2>
-      </header>
+      <h2 class="filter-header-title">Фильтр:</h2>
       <section class="filter filter-price">
         <h3 class="filter-title">Цена:</h3>
         <div class="range-controls">
@@ -129,7 +125,7 @@
         <h2 class="filters-title left-litle-filter">Производители:</h2>
         <ul class="filter-items">
           <li class="filter-option-brand">
-            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="BOSCH" id="BOSCH">
+            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="BOSCH" id="BOSCH"  checked>
             <label for="BOSCH"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>BOSCH</label>
           </li>
           <li class="filter-option-brand">
@@ -137,7 +133,7 @@
             <label for="Интерскол"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>Интерскол</label>
           </li>
           <li class="filter-option-brand">
-            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="Makita" id="Makita">
+            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="Makita" id="Makita"  checked>
             <label for="Makita"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>Makita</label>
           </li>
           <li class="filter-option-brand">
@@ -154,25 +150,25 @@
         <h2 class="filters-title">Питание:</h2>
         <ul class="filter-charge-class">
           <li class="filter-charge">
-            <input class="visually-hidden filter-input" name="dzen" type="radio" id="charge-1">
+            <input class="visually-hidden filter-input" name="dzen" type="radio" id="charge-1" checked>
             <label for="charge-1">Аккумуляторные</label>
           </li>
           <li class="filter-charge">
-            <input class="visually-hidden filter-input" name="dzen" type="radio" id="charge-2" checked>
+            <input class="visually-hidden filter-input" name="dzen" type="radio" id="charge-2">
             <label for="charge-2">Стевые</label>
           </li>
         </ul>
       </div>
-      <button class="btn show-btn" type="submit">Показать</button>
+      <button class="show-btn" type="submit">Показать</button>
     </form>
   </section>
   <section class="catalog">
     <div class="sort-direction">
       <a class="filter-header-sort">Сортировка:</a>
-      <a class="sort-item sort-item-1" href="#">По цене</a>
+      <a class="sort-item sort-item-1 sort-active" href="#">По цене</a>
       <a class="sort-item sort-item-2" href="#">По типу</a>
       <a class="sort-item sort-item-3" href="#">По функционалу</a>
-      <a class="icon-up-direction" href="#">
+      <a class="icon-up-direction icon-active" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#c5c5c5" d="M5.5 0L0 10h11z"/>
       </svg>
     </a>
@@ -186,10 +182,10 @@
           <img src="img/bosch-bfg-3000.jpg" width="130" height="115" alt="Перфоратор BOSCH BFG 3000">
         </p>
         <a href="catalog-item.html"><h3 class="catalog-category">Перфоратор BOSCH BFG 3000</h3></a>
-        <p class="catalog-item-price">
+        <div class="catalog-item-price">
           <p class="button-true">22500Р.</p>
           <a class="button-price-now" href="#" >15500Р.</a>
-        </p>
+        </div>
         <div class="catalog-item-action">
           <a href="#" class="action-buy">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
@@ -203,10 +199,10 @@
         <img src="img/bosch-bfg-6000.jpg" width="130" height="115" alt="Перфоратор BOSCH BFG 6000">
       </p>
       <a href="catalog-item.html"><h3 class="catalog-category">Перфоратор BOSCH BFG 6000</h3></a>
-      <p class="catalog-item-price">
+      <div class="catalog-item-price">
         <p class="button-true">30500Р.</p>
         <a class="button-price-now" href="#" >25500Р.</a>
-      </p>
+      </div>
       <div class="catalog-item-action">
         <a href="#" class="action-buy">
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить
@@ -328,7 +324,7 @@
         </li>
       </ul>
       <div class="catalog-pages">
-        <a class="page-1 pages" href="#">1</a>
+        <a class="page-1 pages page-active" href="#">1</a>
         <a class="page-2 pages" href="#">2</a>
         <a class="page-3 pages" href="#">3</a>
         <a class="page-next pages" href="#">Следующая</a>
@@ -336,9 +332,20 @@
     </section>
   </div>
 </main>
+<section class="catalog-promo">
+  <div class="container">
+    <h2 class="page-perf">Пара слов о перфораторах</h2>
+    <p class="page-text">
+      Перфоратор — универсальный строительный инструмент.Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+    </p>
+    <p class="page-text text-page-last">
+      Существуют электромеханические и пневматические перфораторы.Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.В ассортиментном ряду есть выбор «трехрежимников»:в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+    </p>
+  </div>
+</section>
 <footer class="footer-menu">
   <div class="container">
-    <div class="footer-top-panel ">
+    <div class="footer-top-panel">
       <a href="index.html" class="footer-logo"><img src="img/logo-footer.png" width="220" height="68" alt="Техномарт"></a>
       <ul class="footer-panel-contacts catalog-li">
         <li class="footer-li"><a href="#" class="fo-li">Компания</a></li>
@@ -375,7 +382,7 @@
       </div>
       <div class="feedback-html">
         <p>Разработарно-</p>
-        <a href="mailto:mail@htmlacademy.ru" class="feedback-html-link">htmlacademy.ru</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="feedback-html-link">htmlacademy.ru</a>
       </div>
     </div>
   </div>
@@ -397,7 +404,7 @@
     </div>
     <div class="modal-buttons-order">
       <button class="modal-btn" type="button" name="send">Оформить заказ</button>
-      <button class="modal-btn modal-close-cart" href="#">Продолжить покупки</button>
+      <button class="modal-btn modal-close-cart">Продолжить покупки</button>
     </div>
   </div>
   <script src="js/main.js"></script>
