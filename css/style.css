@@ -1220,10 +1220,10 @@ margin: 0;
   text-transform: none;
 }
 .promo-info-1{
-width: 520px;
+width: 590px;
 }
 .promo-info-2{
-width: 385px;
+width: 400px;
 }
 .promo-list{
   padding: 0;
@@ -1270,10 +1270,12 @@ width: 385px;
   font-family: "PT sans", "Arial", sans-serif;
   font-weight: 400;
   text-transform: none;
-  width: 180px;
+  width: 200px;
 }
 .btn-about{
-  width: 220px; 
+  width: 227px;
+
+
 }
 .btn-where{
   width: 300px;
@@ -1294,10 +1296,10 @@ width: 385px;
 }
 .footer-panel-contacts{
   display: inline-flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 550px;
   margin: 0px;
-  padding: 35px 0 0 140px;
+  padding: 35px 0 0 170px;
 }
 .footer-panel-contacts li{
   text-decoration: none;
@@ -1315,10 +1317,10 @@ width: 385px;
 }
 .footer-panel-offer {
   display: inline-flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 510px;
   margin: 0px;
-  padding: 35px 0 0 140px;
+  padding: 35px 0 0 20px;
 }
 .footer-li:hover{
   text-decoration: underline;
@@ -1347,7 +1349,7 @@ width: 385px;
 .footer-panel-address{
   padding-top: 17px;
   height: 40px;
-  width: 360px;
+  width: 430px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1377,7 +1379,7 @@ width: 385px;
   padding: 40px 0 20px 112px;
 }
 .feedback-html{
-  padding: 20px 0 20px 115px;
+  padding: 20px 10px 20px 115px;
 }
 .feedback-html-link{
   color: #f1c77c;
@@ -1480,7 +1482,6 @@ text-decoration: underline;
   z-index: 100;
   border-top: 6px solid #ee3643;
   width: 620px;
-  overflow: hidden;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
 }
 .modal-cart-close{
@@ -1624,9 +1625,6 @@ text-decoration: underline;
   top: 1px;
   right: 1px;
 }
-.modal-show{
-  display: block;
-}
 .btn:hover{
 background-color: #ca2c37;
 }
@@ -1759,7 +1757,7 @@ background-color: #ba2732;
   width: 275px;
 }
 .text-guarantee{
-  width: 380px;
+  width: 379px;
 }
 .text-credit{
   width: 280px;
@@ -1806,4 +1804,7 @@ background-color: #ba2732;
 }
 .text-page-last {
   padding-bottom: 75px;
+}
+.modal-show{
+  display: block;
 }
