@@ -223,13 +223,13 @@ opacity: 1 ;
   color: #ee3643;
 }
 .our-contacts{
-  min-width:270px ;
+  width:270px ;
   margin: 0;
-  padding-right: 35px;
+  padding-right: 45px;
 }
 .our-telephone {
   position: relative;
-  padding: 9px 40px;
+  padding: 9px 50px;
   margin: 0;
   font-size: 21px;
   line-height: 21px;
@@ -259,6 +259,7 @@ opacity: 1 ;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  box-sizing: border-box;
 }
 .user-contacts{
   padding: 0px;
@@ -381,13 +382,11 @@ opacity: 1 ;
 .ravshan-btn {
   position: relative;
   display: block;
-  width: 299px;
   font-size: 21px;
   line-height: 21px;
-  padding: 11px 62px 11px 44px;
+  padding: 11px 50px 11px 45px;
   box-sizing: border-box;
   color: #c5c5c5;
-  font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%;
 }
@@ -395,13 +394,13 @@ opacity: 1 ;
   position: absolute;
   top: 50%;
   transform: translateY(-55%);
-  left: 13px;
+  left: 6px;
 }
 .ravshan-btn svg:nth-child(2) {
   position: absolute;
   top: 50%;
   transform: translate(55%, -55%);
-  left: 250px;
+  left: 258px;
 }
 .ur-orders-1:after {
   content: '';
@@ -929,9 +928,10 @@ main{
   font-weight: 400;
   background: #f7f3ec;
   text-transform: uppercase;
+  border-radius: 3px;
 }
 .filter-header-sort{
-  padding-right: 115px;
+  margin-right: 140px;
   color: #000000;
   text-decoration: none;
 }
@@ -941,7 +941,7 @@ main{
   
 }
 .sort-direction{
-  padding: 10px 17px;
+  padding: 10px;
   display: inline-flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -954,6 +954,7 @@ main{
   background: #f7f3ec;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 3px;
 }
 .sort-item{
   color: #cacaca;
@@ -971,17 +972,17 @@ main{
 .sort-item-1{
   margin: 0px;
   padding: 0;
-  margin-right: 68px;
+  margin-right: 67px;
 }
 .sort-item-2{
   margin: 0px;
   padding: 0;
-  margin-right: 64px;
+  margin-right: 59px;
 }
 .sort-item-3{
   margin: 0px;
   padding: 0;
-  margin-right: 45px;
+  margin-right: 39px;
 }
 .sort-active{
   color: #ee3643;
