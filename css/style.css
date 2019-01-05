@@ -1,6 +1,12 @@
 /*font-family: 'Cuprum', "Arial", sans-serif;
 font-family: 'PT Sans', "Arial", sans-serif;*/
 @import url('https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700');
+
+html{
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  font-family:sans-serif;
+}
 body {
   padding: 0;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -229,7 +235,7 @@ opacity: 1 ;
 }
 .our-telephone {
   position: relative;
-  padding: 9px 50px;
+  padding: 9px 0px;
   margin: 0;
   font-size: 21px;
   line-height: 21px;
@@ -253,13 +259,13 @@ opacity: 1 ;
 .our-address{
   padding: 0;
   margin: 0;
-  padding-top: 7px;
-  padding-left: 10px;
-  min-width: 275px;
+  margin-top: 5px;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
   box-sizing: border-box;
+  text-align: center;
+    
 }
 .user-contacts{
   padding: 0px;
@@ -384,11 +390,9 @@ opacity: 1 ;
   display: block;
   font-size: 21px;
   line-height: 21px;
-  padding: 11px 50px 11px 45px;
+  padding: 11px 65px 11px 45px;
   box-sizing: border-box;
   color: #c5c5c5;
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%;
 }
 .ravshan-btn svg:nth-child(1) {
   position: absolute;
