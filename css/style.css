@@ -1740,6 +1740,11 @@ left: 49%;
  .close-btn:after{
 		 transform: rotate(-45deg);
 }
+ .modal-map iframe{
+		 width: 100%;
+		 height: 100%;
+		 border: 0;
+}
 /**/
  .modal-cart{
 		 position: fixed;
