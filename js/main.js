@@ -36,17 +36,17 @@
 	var popupCart = document.querySelector('.modal-cart');
 	var closeCart = document.querySelector('.modal-cart-close');
 
-	    if (openCart) {
-	    openCart.addEventListener('click', function (event) {
-	        event.preventDefault();
-	        popupCart.classList.add('modal-show');
+			if (openCart) {
+			openCart.addEventListener('click', function (event) {
+				event.preventDefault();
+				popupCart.classList.add('modal-show');
 
-	    });
+			});
 
-	    closeCart.addEventListener('click', function (event) {
-	        event.preventDefault();
-	        popupCart.classList.remove('modal-show');
+			closeCart.addEventListener('click', function (event) {
+				event.preventDefault();
+				popupCart.classList.remove('modal-show');
 
-	    });
-	};
-})();
+			});
+		};
+	})();
