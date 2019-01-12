@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Главная страница - Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic%7CPT+Sans:400,700&amp;subset=cyrillic-ext,latin" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="inner-page">
     <header class="header-main">
@@ -22,9 +22,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
             Закладки: 0
           </a>
-          <a href="#" class="cart bar-right">
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
-            Корзина: 0
+          <a href="#" class="cart bar-right bar-cart-count">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Корзина: <span class="count">0<span>
           </a>
           <a href="#" class="order bar-right">Оформить заказ</a>
         </div>
@@ -70,11 +69,11 @@
               <a href="#" class="btn-fon offer offer-tools">На все случаи</a>
             </div>
             <div class="promo-item promo-item-slider">
-              <input type="radio" class="slider-btn-1" id="slider-btn-1" name="toggle" checked>
-              <input type="radio" class="slider-btn-2" id="slider-btn-2" name="toggle">
+              <input type="radio" class="item-slider slider-btn-1" id="slider-btn-1" name="toggle" checked>
+              <input type="radio" class="item-slider slider-btn-2" id="slider-btn-2" name="toggle">
               <div class="slider-arrows">
-                <a class="slider-arrow icon-left"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg></a>
-                <a class="slider-arrow icon-right"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg></a>
+                <a class="slider-arrow icon-left" data-direction="left"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg></a>
+                <a class="slider-arrow icon-right" data-direction="left"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg></a>
               </div>
               <div class="slider-controls">
                 <label class="slider-control control-1" for="slider-btn-1"></label>
@@ -131,7 +130,7 @@
                 <a class="button-price-now price-now">25500Р.</a>
               </div>
               <div class="catalog-item-action">
-                <a href="#" class="action-buy">
+                <a href="#" class="action-buy js-buy">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить
                 </a>
                 <a href="#" class="action-bookmarks">В закладки</a>
@@ -147,7 +146,7 @@
                 <a class="button-price-now price-now">15500Р.</a>
               </div>
               <div class="catalog-item-action">
-                <a href="#" class="action-buy">
+                <a href="#" class="action-buy js-buy">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить
                 </a>
                 <a href="#" class="action-bookmarks">В закладки</a>
@@ -163,7 +162,7 @@
                 <a class="button-price-now price-now">25500Р.</a>
               </div>
               <div class="catalog-item-action">
-                <a href="#" class="action-buy">
+                <a href="#" class="action-buy js-buy">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить
                 </a>
                 <a href="#" class="action-bookmarks">В закладки</a>
@@ -179,7 +178,7 @@
                 <a class="button-price-now price-now">12500Р.</a>
               </div>
               <div class="catalog-item-action">
-                <a href="#" class="action-buy">
+                <a href="#" class="action-buy js-buy">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить
                 </a>
                 <a href="#" class="action-bookmarks">В закладки</a>
@@ -330,13 +329,13 @@
       <button class="close-btn write-us-close" type="button">
       <span class="visually-hidden">close</span>
       </button>
-      <form class="write-us-form" action="/echo" method="post">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-us">
           <label class="form-label" for="name">Ваше имя:
             <input class="form-item" type="text" name="name" id="name" placeholder="Имя Фамилия">
           </label>
           <label class="form-label" for="e-mail">Ваш e-mail:
-            <input class="form-item" id="e-mail" type="text" name="e-mail"  placeholder="email@examle.com">
+            <input class="form-item" id="e-mail" type="text" name="email"  placeholder="email@examle.com">
           </label>
           <label class="form-label" for="text">Текст письма:
             <textarea class="form-item item-last" name="text" id="text" placeholder="В свободной форме">
@@ -353,6 +352,22 @@
       <img src="img/map-on-index.jpg" width="940" height="476" alt="Карта">
       <button class="close-btn close-map" type="button"><span class="visually-hidden">close</span></button>
     </section>
-    <script src="js/main.js"></script>
+    <div class="modal modal-cart">
+      <a class="modal-cart-close" href="catalog.html"><span class="visually-hidden">close</span></a>
+      <div class="modal-cart-content">
+        <p class="modal-text"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="66px" height="66px" viewBox="0 0 66 66" enable-background="new 0 0 66 66" xml:space="preserve"><circle fill="#63A63E" cx="33" cy="33" r="33"/><path fill="#FFFFFF" d="M49.641,21.066c-0.389-0.389-1.025-0.389-1.414,0L29.788,39.504c-0.389,0.389-1.025,0.389-1.414,0
+            l-8.14-8.139c-0.389-0.389-1.025-0.389-1.414,0L15.285,34.9c-0.389,0.389-0.389,1.025,0,1.414l13.089,13.09
+            c0.389,0.389,1.025,0.389,1.414,0l3.536-3.536c0.389-0.389,1.025-1.025,1.414-1.414l18.438-18.438c0.389-0.389,0.389-1.025,0-1.414
+            L49.641,21.066z"/>
+          </svg>Товар добавлен в корзину!
+        </p>
+      </div>
+      <div class="modal-buttons-order">
+        <a class="modal-btn modal-btn-cart" href="order.html">Оформить заказ</a>
+        <a class="modal-btn modal-close-cart" href="">Продолжить покупки</a>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
