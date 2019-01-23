@@ -1,17 +1,33 @@
-	var openMap = document.querySelector('.contacts-map');
+		var buyCart = document.querySelectorAll('.js-buy');
+	var modalBuyCart= document.querySelector('.modal-cart')
+	var closeBuyCart = document.querySelector('.modal-cart-close')
+		
+		buyCart.forEach(function (entry) {
+			entry.addEventListener('click', function (event){
+			event.preventDefault();
+			modalBuyCart.classList.add("modal-show");
+		});
+			closeBuyCart.addEventListener('click', function (event){
+				event.preventDefault();
+				modalBuyCart.classList.remove("modal-show");
+			});
+		});
+		
+	var opMap = document.querySelector('.contacts-map');
 	var popupMap = document.querySelector('.modal-map');
 	var closeMap = document.querySelector('.close-map');
 
+	
+		opMap.addEventListener('click', function(event) {
+			event.preventDefault();
+			popupMap.classList.add('modal-show');
+		});
 
-	openMap.addEventListener('click', function(event) {
-	    event.preventDefault();
-	    popupMap.classList.add('modal-show');
-	});
-
-	closeMap.addEventListener('click', function(event) {
-	    event.preventDefault();
-	    popupMap.classList.remove('modal-show');
-	});
+		closeMap.addEventListener('click', function(event) {
+		    event.preventDefault();
+		    popupMap.classList.remove('modal-show');
+		});
+	
 
 
 	var openWrite = document.querySelector('.write-usbtn');
@@ -28,8 +44,7 @@
 
 	try {
 	    storage = localStorage.getItem('nameContact');
-	    // storage = localStorage.getItem('emailContact');
-	} catch (err) {
+	    } catch (err) {
 	    isStorageSupport = false;
 	}
 
@@ -38,9 +53,8 @@
 	    popupWrite.classList.add("modal-show");
 
 	    if (storage) {
-	        storageName.value = storageName;
-	        // storageEmail.value = storageEmail;
-	    } else {
+	        storageName.value = storageName;	        
+	        } else {
 	        storageName.focus();
 	    }
 	});
@@ -106,3 +120,4 @@
 	        });
 	    };
 	};
+	
