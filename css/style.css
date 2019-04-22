@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    margin: 0 auto;
     padding: 0;
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 17px;
@@ -125,6 +126,8 @@ a {
     padding-left: 48px;
     outline: 0;
     border: 0;
+    font-size: 17px;
+    line-height: 24px;
     box-sizing: border-box;
     background-color: transparent;
     color: #fff;
